@@ -1554,12 +1554,12 @@ function App() {
                     const count = selectedTodos.length
                     return (
                       <>
-                        Are you sure you want to delete {count} task{count === 1 ? '' : 's'}?<br />
+                        Sure you want to delete {count} task{count === 1 ? '' : 's'}?<br />
                         You can always restore {count === 1 ? 'it' : 'them'} later.
                       </>
                     )
                   })() : (
-                    <>Are you sure you want to delete all tasks?<br />You can always restore them later.</>
+                    <>Sure you want to delete all tasks?<br />You can always restore them later.</>
                   )}
                 </p>
                 <div className="modal-buttons">
@@ -1628,7 +1628,7 @@ function App() {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <div className="delete-confirm-modal">
                 <h2>Delete Task</h2>
-                <p>Are you sure you want to delete this task?<br />You can always restore it later.</p>
+                <p>Sure you want to delete this task?<br />You can always restore it later.</p>
                 <div className="modal-buttons">
                   <button className="btn btn-danger" onClick={confirmDelete}>
                     Delete
